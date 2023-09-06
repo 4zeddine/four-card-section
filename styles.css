@@ -1,0 +1,255 @@
+/* Reseting Browser CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Root variables */
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+/* HTML styles */
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: var(--Very-Light-Gray);
+}
+
+/* Main styles */
+main {
+  margin: 8rem auto;
+  width: 100%;
+}
+/* Headers styles */
+.headers {
+  text-align: center;
+  margin-bottom: 4.4rem;
+}
+
+.headers h1 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin: 1.6rem auto 2rem;
+  color: var(--Very-Dark-Blue);
+}
+.headers h2 {
+  font-weight: 200;
+  font-size: 2.4rem;
+  color: var(--Very-Dark-Blue);
+  letter-spacing: 0.209px;
+}
+.headers p {
+  max-width: 33.6rem;
+  font-weight: 400;
+  line-height: 165%;
+  color: var(--Grayish-Blue);
+  margin: 0 auto;
+}
+/* Cards styles */
+.cards {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  display: inline-block;
+  padding: 2.2rem;
+  background-color: #fff;
+  width: 19rem;
+  height: 100%;
+  box-shadow: 2px 15px 40px var(--Grayish-Blue);
+  border-radius: 0.4rem;
+}
+
+.second {
+  margin: 0 1.5rem;
+  border-top: var(--Red) 4px solid;
+}
+.fourth {
+  left: 25.15rem;
+  top: 2rem;
+  border-top: var(--Orange) 4px solid;
+}
+.first,
+.third {
+  top: 6.5rem;
+}
+.first {
+  border-top: var(--Cyan) 4px solid;
+}
+.third {
+  border-top: var(--Blue) 4px solid;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+.card p {
+  line-height: 147.5%; /* 22.125px */
+  letter-spacing: -1.05px;
+  color: var(--Grayish-Blue);
+  margin-top: 1.4rem;
+}
+
+.card img {
+  width: 4.2rem;
+  height: 4.2rem;
+  float: right;
+  margin-top: 3rem;
+}
+
+@media (max-width: 1140px) {
+  main {
+    margin: 4rem auto;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 22rem;
+    margin: 0 auto;
+  }
+  .first,
+  .second,
+  .third,
+  .fourth {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  .second {
+    margin: 1.5rem 0;
+  }
+  .third {
+    margin-bottom: 1.5rem;
+  }
+}
